@@ -2,7 +2,7 @@
 > Python practice and examples, **Semicolon Africa**
 
 ### Author
-Raheem Adebayo O., `Software Engineer` \
+Raheem Adebayo O., `Software Engineer` 
 >[Twitter - @adraheemzy](https://twitter.com/adraheemzy)\
 [Instagram - @adraheemzy](https://instagram.com/adraheemzy)\
 [Facebook - Raheem Adebayo O.](https://facebook.com/adebayo.raheemoluseyi)\

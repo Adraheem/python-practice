@@ -3,11 +3,13 @@ if __name__ == '__main__':
     counter = 0
 
     while counter < 3:
+        if counter != 0:
+            grade = int(float(input("Enter grade again: ")))
+
         counter += 1
 
         if grade < 0 or grade > 100:
-            grade = int(float(input("Invalid grade, enter grade again: ")))
-            continue
+            print("Invalid input")
         else:
             if 90 <= grade <= 100:
                 print("A")
@@ -21,5 +23,3 @@ if __name__ == '__main__':
                 print("E")
             else:
                 print("F, Zero talent")
-
-            break
