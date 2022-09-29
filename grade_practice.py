@@ -1,4 +1,4 @@
-if __name__ == '__main__':
+def get_grade():
     grade = int(float(input("Enter grade: ")))
     counter = 0
 
@@ -23,3 +23,7 @@ if __name__ == '__main__':
                 print("E")
             else:
                 print("F, Zero talent")
+
+
+if __name__ == '__main__':
+    get_grade()
