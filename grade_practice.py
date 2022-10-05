@@ -1,3 +1,6 @@
+from first_class import FirstClass
+
+
 def get_grade():
     grade = int(float(input("Enter grade: ")))
     counter = 0
@@ -26,4 +29,16 @@ def get_grade():
 
 
 if __name__ == '__main__':
-    get_grade()
+    # get_grade()
+
+    my_class = FirstClass("John Doe", 11)
+    print(my_class.get_age())
+    print(my_class.get_name())
+
+    my_class.set_name("Mat New")
+    my_class.set_age(56)
+
+    print(my_class.get_age())
+    print(my_class.get_name())
+
+    print(FirstClass.use_static())
