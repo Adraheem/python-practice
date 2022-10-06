@@ -13,3 +13,6 @@ To clone this repo, use the command below
 ```
 git clone https://github.com/Adraheem/python-practice.git
 ```
+```
+git clone https://github.com/Adraheem/C13-Python-Exercise.git
+```
