@@ -2,47 +2,54 @@ import math
 
 
 class AssignmentClass:
-    def fill_missing_code(self):
+    @staticmethod
+    def fill_missing_code():
         grade = int(input("Enter grade: "))
         if grade >= 90:
             print(f"Congratulations! Your grade of {grade} earns you an A in this course")
         else:
             print(f"You scored {grade} in this course")
 
-    def calculate_eggs(self):
+    @staticmethod
+    def calculate_eggs():
         eggs = int(input("Enter the number of eggs: "))
 
         crates = math.ceil(eggs / 6)
         remaining_eggs = eggs % 6
         print(f"{eggs} eggs will occupy {crates} crates with {remaining_eggs} in the last crate")
 
-    def bacterial_growth(self):
+    @staticmethod
+    def bacterial_growth():
         print("Hour \t\t Number of Bacteria")
         for i in range(0, 16, 5):
             num = 200 * 2**i
             print(f"{i} \t\t\t {num}")
 
-    def multiplication_table(self):
+    @staticmethod
+    def multiplication_table():
         for i in range(1, 11):
             print(f"{i}", end="\t|\t")
             for j in range(1, 11):
                 print(f"{j*i}", end="\t")
             print("")
 
-    def reverse_number(self):
+    @staticmethod
+    def reverse_number():
         num = input("Enter a number (to reverse with spaces): ")
         num_array = list(num)
         for i in range(len(num_array) - 1, -1, -1):
             print(f"{num_array[i]}", end=" ")
 
-    def check_palindrome(self):
+    @staticmethod
+    def check_palindrome():
         num = input("Enter a number (check palindrome): ")
         num_array = list(num)
         num_array.reverse()
         rev_num = "".join(num_array)
         print(f"{num} is {'' if num == rev_num else 'not '}a palindrome number")
 
-    def fibonacci(self):
+    @staticmethod
+    def fibonacci():
         # generate a list of first 100 fibonacci numbers
         fib = [0, 1]
         for i in range(2, 100):
@@ -54,7 +61,8 @@ class AssignmentClass:
         else:
             print("Invalid index")
 
-    def equilateral_triangle(self):
+    @staticmethod
+    def equilateral_triangle():
         sides = input("Enter the three sides of the triangle (separated by comma): ")
         sides = sides.split(",")
         a = int(sides[0].strip())
@@ -66,7 +74,8 @@ class AssignmentClass:
         else:
             print("It is not an equilateral triangle")
 
-    def flu_tracker(self):
+    @staticmethod
+    def flu_tracker():
         minimum_infected = 0
         max_infected = 0
         total = 0
@@ -88,7 +97,8 @@ class AssignmentClass:
               f"Minimum: \t\t {minimum_infected}\n"
               f"Maximum: \t\t {max_infected}")
 
-    def turing_test(self):
+    @staticmethod
+    def turing_test():
         input("What is your problem? ")
         answer = ""
 
@@ -100,7 +110,8 @@ class AssignmentClass:
         else:
             print("Well, you have it now.")
 
-    def heart_rate_monitor(self):
+    @staticmethod
+    def heart_rate_monitor():
         age = int(input("Enter age (for heart rate monitor): "))
         max_heart_rate = 220 - age
         target_heart_rate_l = 0.5 * max_heart_rate
@@ -109,7 +120,8 @@ class AssignmentClass:
         print(f"Maximum Heart rate: \t\t {max_heart_rate}\n"
               f"Target heart rate: \t\t\t {target_heart_rate_l} - {target_heart_rate_h}")
 
-    def wage_calculator(self):
+    @staticmethod
+    def wage_calculator():
         original = 10
         after = original * ((1 + 0.03) ** 5)
         after = after * ((1 - 0.03) ** 2)
